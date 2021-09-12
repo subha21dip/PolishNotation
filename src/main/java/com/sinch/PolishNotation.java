@@ -46,8 +46,9 @@ public class PolishNotation {
                     throw new
                             UnsupportedOperationException("Cannot divide by zero");
                 return op2 / op1;
+            default: throw new
+                    UnsupportedOperationException(" unsupported operator " + operator);
         }
-        return 0.0;
     }
     public static void evaluate(List<String> expressionList) {
 
